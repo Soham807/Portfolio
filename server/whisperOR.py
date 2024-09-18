@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 import time
 load_dotenv()
 
-api_key = os.getenv("OPENAI_API_KEY")
+
 
 NEON_GREEN = '\033[32m'
 RESET_COLOR = '\033[0m'
@@ -106,7 +106,7 @@ def metadata(text : str):
     url = 'https://api.openai.com/v1/chat/completions'
     headers = {
     "Content-Type" : "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": "Bearer "
     }
 
     diagnosis  = text
